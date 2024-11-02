@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
   display: flex;
-  height: 100vh;
+  height: 100%;
 `;
 export const Title = styled.h1`
   width: 100%;
@@ -23,6 +23,7 @@ export const ImgWrapper = styled.div`
 
 export const FieldsWrapper = styled.div`
   width: 100%;
+
 `;
 
 export const ErrorMessage = styled.p`

@@ -1,11 +1,18 @@
-import React from "react";
-
-import { Input, Wrapper } from "./styles";
+import { useState } from "react";
+import { Input, Label, Wrapper } from "./styles";
 
 function InputButton({ placeholder }) {
+  const [value, setValue] = useState("");
+
   return (
     <Wrapper>
-      <Input placeholder={placeholder} />
+      <Input
+        type="text"
+        value={value}
+        onChange={(e) => setValue(e.target.value)}
+        placeholder=""
+      />
+      <Label>{placeholder}</Label>
     </Wrapper>
   );
 }

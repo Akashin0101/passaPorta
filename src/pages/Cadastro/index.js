@@ -38,10 +38,19 @@ function Cadastro() {
       </ImgWrapper>
       <FieldsWrapper>
         <Title>CADASTRO</Title>
-        <InputButton placeholder="Nome de Usuário" />
-        <InputButton placeholder="E-mail" />
-        <InputButton placeholder="Senha" />
-        <InputButton placeholder="Repetir Senha" />
+        <div
+          style={{
+            display: "flex",
+            width: "100%",
+            flexDirection: "column",
+            alignItems: "center",
+          }}
+        >
+          <InputButton placeholder="Nome de Usuário" />
+          <InputButton placeholder="E-mail" />
+          <InputButton placeholder="Senha" />
+          <InputButton placeholder="Repetir Senha" />
+        </div>
 
         <CenteredForm onSubmit={handleSubmit}>
           <CheckboxLabel>
@@ -73,7 +82,6 @@ function Cadastro() {
           <SubmitButton type="submit">CRIAR CONTA</SubmitButton>
         </CenteredForm>
       </FieldsWrapper>
-      <div></div>
     </Wrapper>
   );
 }

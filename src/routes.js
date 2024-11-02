@@ -3,13 +3,21 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import React from "react";
 import Cadastro from "./pages/Cadastro";
 import styled from "styled-components";
+import Home from "./pages/Home";
+import Login from "./pages/Login";
+import ErrorPage from "./pages/ErrorPage";
+import DetalhesVeiculo from "./pages/DetalhesVeiculo";
 
 export default function Rotas() {
   return (
     <RoutesStyle>
       <BrowserRouter>
         <Routes>
-          <Route path="/Cadastro" element={<Cadastro />}></Route>
+          <Route path="/cadastro" element={<Cadastro />}></Route>
+          <Route path="/home" element={<Home />}></Route>
+          <Route path="/login" element={<Login />}></Route>
+          <Route path="/detalhesveiculo" element={<DetalhesVeiculo />}></Route>
+          <Route path="/*" element={<ErrorPage />}></Route>
         </Routes>
       </BrowserRouter>
     </RoutesStyle>

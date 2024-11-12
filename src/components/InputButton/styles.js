@@ -15,7 +15,7 @@ export const Input = styled.input`
   outline: none;
   font-size: 18px;
   padding-left: 15px;
-  padding-right: 40px; /* Ajuste para garantir espaço para o ícone sem cortá-lo */
+  padding-right: 40px;
   
   &::placeholder {
     color: transparent;

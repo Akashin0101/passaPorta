@@ -1,5 +1,5 @@
 import { Input, Label, Wrapper, IconWrapper } from "./styles";
-import { FaSearch } from "react-icons/fa"; // Importando o ícone da lupa
+import { FaSearch } from "react-icons/fa";
 
 function InputButton({ placeholder, value, onChange, width, icon }) {
   return (

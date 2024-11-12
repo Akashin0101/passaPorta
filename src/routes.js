@@ -7,6 +7,7 @@ import Home from "./pages/Home";
 import Login from "./pages/Login";
 import ErrorPage from "./pages/ErrorPage";
 import DetalhesVeiculo from "./pages/DetalhesVeiculo";
+import Historico from "./pages/Historico";
 
 export default function Rotas() {
   return (
@@ -17,6 +18,7 @@ export default function Rotas() {
           <Route path="/home" element={<Home />}></Route>
           <Route path="/login" element={<Login />}></Route>
           <Route path="/detalhesveiculo" element={<DetalhesVeiculo />}></Route>
+          <Route path="/Historico" element={<Historico />}></Route>
           <Route path="/*" element={<ErrorPage />}></Route>
         </Routes>
       </BrowserRouter>

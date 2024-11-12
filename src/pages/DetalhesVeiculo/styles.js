@@ -20,8 +20,9 @@ export const InfoTitle = styled.div`
   margin-bottom: 35px;
 `;
 export const PlatePic = styled.img`
-  height: 600px;
-  border-radius: 15px;
+  max-width: 50%;
+  border-radius: 10px;
+  box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.3);
 `;
 
 export const EditButton = styled.button`
@@ -46,7 +47,7 @@ export const EditButton = styled.button`
     outline: none;
   }
 `;
-export const Icon = styled(MdOutlineModeEditOutline )`
+export const Icon = styled(MdOutlineModeEditOutline)`
   color: black;
   font-size: 22px;
 `;

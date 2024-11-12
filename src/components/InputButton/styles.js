@@ -6,14 +6,17 @@ export const Wrapper = styled.div`
 `;
 
 export const Input = styled.input`
-  width: 400px;
+  width: ${(props) => props.width || "400px"};
+  max-width: 100%;
   height: 51px;
   background-color: #fff;
-  border-radius: 15px;
+  border-radius: 12px;
   box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.5);
   outline: none;
   font-size: 18px;
-
+  padding-left: 15px;
+  padding-right: 40px; /* Ajuste para garantir espaço para o ícone sem cortá-lo */
+  
   &::placeholder {
     color: transparent;
   }
@@ -31,8 +34,24 @@ export const Label = styled.label`
 
   ${Input}:focus + &,
   ${Input}:not(:placeholder-shown) + & {
-    top: -20px;
-    font-size: 16px;
+    top: -22px;
+    font-size: 18px;
     color: #fff;
+    text-shadow:
+      0.02em 0 black,
+      0 0.02em black,
+      -0.02em 0 black,
+      0 -0.02em black;
   }
+`;
+
+export const IconWrapper = styled.div`
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #076FA9;
+  font-size: 25px; 
+  pointer-events: none;
+  z-index: 1;
 `;
